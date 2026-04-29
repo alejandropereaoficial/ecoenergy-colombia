@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoEnergy Colombia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>EcoEnergy Colombia</h1>
+  <nav>
+    <a href="#info">Información</a>
+    <a href="#datos">Datos</a>
+    <a href="#calculadora">Calculadora</a>
+  </nav>
+</header>
+
+<section id="info">
+  <h2>Energía Solar ☀️</h2>
+  <p>
+    La energía solar es una fuente limpia y renovable que se obtiene del sol.
+    Es clave para reducir emisiones de CO2 y combatir el cambio climático.
+  </p>
+</section>
+
+<section id="datos">
+  <h2>Datos de Energía Renovable</h2>
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>Año</th>
+        <th>Solar</th>
+        <th>Eólica</th>
+        <th>Hidroeléctrica</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<section id="calculadora">
+  <h2>Calculadora de Energía Renovable</h2>
+  <input type="number" id="consumo" placeholder="Consumo en kWh">
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+</section>
+
+<section>
+  <h2>Gráfico</h2>
+  <canvas id="grafico"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
